@@ -24,4 +24,25 @@ export const CustomSelect = styled(Select).attrs({
                 'var(--colors-ui-base)',
         }),
     }
-})``
+})`
+    width: 200px;
+    font-family: var(--family);
+    border-radius: var(--radius);
+    border: none;
+
+    & > * {
+        box-shadow: var(--shadow);
+    }
+
+    & input {
+        padding-left: 0.25rem;
+    }
+
+    & * {
+        color: var(--colors-text) !important;
+    }
+
+    & > div[id] {
+        background-color: var(--colors-base-ui);
+    }
+`
